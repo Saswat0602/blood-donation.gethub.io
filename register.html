@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="medical-logo.ico" type="image" size="30x30">
+
+    <title>Blood-Donation-Camp</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin-top: 5px;
+            padding: 0;
+        }
+
+        body {
+            background-color: paleturquoise;
+        }
+
+        #heading {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .right {
+            background-color: white;
+            width: 38%;
+            padding: 24px;
+            margin: 30px 45px 1px auto;
+            border-radius: 15px;
+            font-family: 'Balsamiq Sans', cursive;
+        }
+
+        /* .container h1 {
+            font-size: 50px;
+            margin-top: 50px;
+            line-height: 25px;
+            position: absolute;
+            padding: 0 50px 50px 50px;
+        } */
+        h1 {
+            font-style: bold;
+            text-align: center;
+        }
+
+        #heading {
+            margin-left: 3cm;
+            margin-top: 20px;
+            color: blue;
+            font-size: 40px;
+        }
+
+        .button {
+            background-color: rgba(36, 36, 156, 0.809);
+            color: rgb(255, 255, 255);
+            height: 57px;
+            line-height: 7px;
+            width: 223px;
+            border-radius: 10px;
+        }
+
+        .round {
+            border-radius: 10px;
+            border-color: rgb(5, 207, 238);
+            border-style: solid;
+            padding: 2px;
+            width: 84%;
+            height: 40px;
+            font-size: large;
+        }
+
+        /* .ribon {
+          
+            align-items: inherit;
+        } */
+
+        h1 {
+            text-align: center;
+        }
+
+        .img1 {
+            height: 833px;
+            margin-top: 2px;
+            margin-left: 1px;
+            width: 100%;
+        }
+
+        .rib {
+            position: relative;
+            bottom: 50px;
+            width: 62px;
+            left: 516px;
+            rotate: 338deg;
+        }
+
+        .navbar {
+            height: 50px;
+            /* background-color: black; */
+            /* color: white; */
+            position: sticky;
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            margin: 25px 14px;
+            font-size: 20px;
+            padding: auto;
+        }
+
+        .navbar ul li a {
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+        }
+
+        footer {
+            font-size: large;
+            font-family: monospace;
+            background-color: black;
+            color: white;
+            padding: 2px;
+            text-transform: uppercase;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        select {
+            padding: 6px;
+            border-radius: 5px;
+            border-color: rgb(5, 207, 238);
+        }
+
+        .data {
+            border-radius: 10px;
+            border-color: rgb(5, 207, 238);
+            border-style: solid;
+            padding: 2px;
+            width: 40%;
+            height: 40px;
+            font-size: large;
+        }
+
+        .rg {
+            position: absolute;
+            /* bottom: 271px; */
+            right: 241px;
+            top: 129px;
+            font-size: 42px;
+            color: rgb(16, 16, 144);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="das.html">dashboard</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div>
+            <h1 id="heading"><strong> Blood-Donation-Camp </strong></h1>
+            <img class="img1" src="bld.png">
+        </div>
+
+        <div class="right">
+            <form>
+                <img class="rib" src="business-3d-red-ribbon.png">
+                <div>
+
+                    <h1 class="rg"> Register here</h1>
+                </div>
+
+
+                <label> Name:</label><br><br>
+                <input class="round" type="text" name="Name" placeholder="enter ur name" value="" /><br> <br>
+                <label>Gender:</label><br><br>
+                <input type="radio" name="Gender" value=" Female">
+                <label> Male</label>
+                <input type="radio" name="Gender" value=" male">
+                <label> Female</label>
+                <input type="radio" name="Gender" value=" male">
+                <label> Other</label><br><br>
+
+
+                <label>Age:</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+                <label>Weight:</label><br>
+                <input class="data" type="number" min="18" placeholder="enter ur age" name="Age">
+                &nbsp; &nbsp;
+
+
+
+                <input class="data" type="number" min="55" placeholder="enter ur weight" name="Weight">
+                <br><br><br>
+
+
+
+                <label>BloodGroup</label><br><br>
+                <select>
+                    <option>Select</option>
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                    <option>O+</option>
+                    <option>O-</option><br><br>
+                </select><br><br>
+                <label for="address">Address</label>
+                <br><br>
+                <input class="round" type="text" name="address" placeholder="address">
+                <br><br>
+                <label>Prefered date</label><br><br>
+                <input class="round" type="date" name="date"><br><br>
+                <input class="button" type="submit" value="submit" name="Submit">
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById("register-form");
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const userData = {
+                name: form.elements.name.value,
+                gender: document.querySelector("input[name='gender']:checked").value,
+                age: form.elements.age.value,
+                bloodGroup: form.elements.bloodGroup.value,
+                date: form.elements.date.value,
+                address: form.elements.address.value,
+            };
+            console.log(userData);
+        });
+    </script>
+
+    <footer>
+        <p class="center">Copyright &copy; </p>
+    </footer>
+
+</body>
+
+</html>
